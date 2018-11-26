@@ -1,0 +1,100 @@
+---
+name: Mitchell O'Hara-Wild
+date: "`r format(Sys.time(), '%B, %Y')`"
+qualifications: BCom(Hons), BSc
+position: Data Scientist
+address: 58 Madeleine Rd, Clayton
+phone: +61 408 259 421
+email: mail@mitchelloharawild.com
+website: mitchelloharawild.com
+github: mitchelloharawild
+linkedin: mitchelloharawild
+twitter: mitchoharawild
+headcolor: 414141
+output: vitae::awesomecv
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+library(vitae)
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Education
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2017 - Nov. 2017", "GPA of 3.875, WAM of 86.625",
+  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2017 - Nov. 2017", "Best in class for: Advanced statistical modelling (ETC3580), Bayesian time series econometrics (ETC4541), Applied econometrics 2 (ETC4410), Advanced topics in computational science (FIT4012), Honours Research Project (ETC4860)",
+  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "GPA of 3.688, WAM of 85.385",
+  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Mentored in the Access Monash Ambassador Program (2015 and 2016)",
+  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Participated in the Vice-Chancellor's Ancora Imparo Student Leadership Program (2014)",
+  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Best in class for: Business analytics (ETC3450), Business forecasting (ETC2450), Algorithms and data structures (FIT2004), Time series analysis for business and economics (ETC3450)"
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# Experience
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+  "Teaching Associate", "Monash University", "Caulfield & Clayton, Australia", "S1 2016 - Present", "Advanced statistical modelling (ETC3580)",
+  "Teaching Associate", "Monash University", "Caulfield & Clayton, Australia", "S1 2016 - Present", "Business forecasting (ETF3231/ETF5231)",
+  "Teaching Associate", "Monash University", "Caulfield & Clayton, Australia", "S1 2016 - Present", "Mathematics for business (ETF2700)",
+  "Teaching Associate", "Monash University", "Caulfield & Clayton, Australia", "S1 2016 - Present", "Data modelling and computing (ETC1010)",
+  "Research Assistant", "Monash University", "Clayton, Australia", "Jan. 2016 - Present", "Supervisors include Rob Hyndman, Dianne Cook, and George Athanasopoulos.",
+  "Research Assistant", "Monash University", "Clayton, Australia", "Jan. 2016 - Present", "Consulting projects with DiabetesLab, Tennis Australia, Monash University and Huawei.",
+  "Research Assistant", "Monash University", "Clayton, Australia", "Jan. 2016 - Present", "Contributed to the development of numerous open source R packages.",
+  "Volunteer", "Rotaract", "Monash, Australia", "Feb. 2013 - Nov. 2016", "Development and maintenance of club website and online services.",
+  "Volunteer", "Rotaract", "Monash, Australia", "Feb. 2013 - Nov. 2016", "Organising and hosting fundraisers.",
+  "Student Ambassador", "Google", "Sydney, Australia", "Feb. 2015 - Nov. 2015", "Supported Google's presence on campus with events and media.",
+  "Data Mining (Internship)", "iSelect", "Cheltenham, Australia", "Feb. 2015 - Mar. 2015", "Improved business data and issue reporting with interactive visualisations, and model-based anomaly detection.",
+  "Fresh Produce", "Coles", "Rowville, Australia", "Oct. 2010 - Nov. 2015", "Food preparation & display, first aid, staff training and customer assistance."
+) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+\newpage
+
+<!-- # Relevant Skills -->
+<!-- ```{r} -->
+<!-- cvskill("Data Analysis", c("Visualisation", "Data Cleaning", "Forecasting", "Modelling", "Communication", "Inference", "Machine Learning", "Web Scraping")) -->
+<!-- cvskill("Programming", c("R", "Python", "SQL", "Java", "C", "C++", "HTML/CSS", "TeX", "MATLAB")) -->
+<!-- ``` -->
+
+<!-- # Awards & Achievements -->
+<!-- ## Awards -->
+<!-- ```{r} -->
+<!-- tribble( -->
+<!--   ~ award, ~ from, ~ year, -->
+<!--   "Commerce Dean's Honour", "Monash", "2017", -->
+<!--   "Commerce Dean's Commendation", "Monash", "2016", -->
+<!--   "Science Dean’s List", "Monash", "2014-2016", -->
+<!--   "International Institute of Forecasters Award", "IIF", "2014", -->
+<!--   "Rotary Youth Leadership Award", "Rotary", "2013" -->
+<!-- ) %>%  -->
+<!--   brief_entries(award, year, from) -->
+<!-- ``` -->
+
+<!-- ## Scholarships -->
+<!-- ```{r} -->
+<!-- tribble( -->
+<!--   ~ scholarship, ~ from, ~ year, -->
+<!--   "Econometrics Honours Memorial Scholarship", "Monash", "2017", -->
+<!--   "Monash Community Leaders Scholarship", "Monash", "2015 & 2016", -->
+<!--   "Mitcham Rotary Scholarship", "Rotary", "2011 & 2012" -->
+<!-- ) %>%  -->
+<!--   brief_entries(scholarship, year, from) -->
+<!-- ``` -->
+
+
+<!-- ## Competitions -->
+<!-- ```{r} -->
+<!-- tribble( -->
+<!--   ~ competition, ~ from, ~ year, -->
+<!--   "UseR! 2018 Datathon Champion", "UseR!", "2018", -->
+<!--   "RMIT SBITL Analytics Competition Champion", "RMIT", "2017", -->
+<!--   "RMIT SBITL Analytics Competition Champion", "RMIT", "2016" -->
+<!-- ) %>%  -->
+<!--   brief_entries(competition, year, from) -->
+<!-- ``` -->
