@@ -62,39 +62,39 @@ tribble(
 <!-- cvskill("Programming", c("R", "Python", "SQL", "Java", "C", "C++", "HTML/CSS", "TeX", "MATLAB")) -->
 <!-- ``` -->
 
-<!-- # Awards & Achievements -->
-<!-- ## Awards -->
-<!-- ```{r} -->
-<!-- tribble( -->
-<!--   ~ award, ~ from, ~ year, -->
-<!--   "Commerce Dean's Honour", "Monash", "2017", -->
-<!--   "Commerce Dean's Commendation", "Monash", "2016", -->
-<!--   "Science Dean’s List", "Monash", "2014-2016", -->
-<!--   "International Institute of Forecasters Award", "IIF", "2014", -->
-<!--   "Rotary Youth Leadership Award", "Rotary", "2013" -->
-<!-- ) %>%  -->
-<!--   brief_entries(award, year, from) -->
-<!-- ``` -->
+# Awards & Achievements
+## Awards
+```{r}
+tribble(
+  ~ award, ~ from, ~ year,
+  "Commerce Dean's Honour", "Monash", "2017",
+  "Commerce Dean's Commendation", "Monash", "2016",
+  "Science Dean’s List", "Monash", "2014-2016",
+  "International Institute of Forecasters Award", "IIF", "2014",
+  "Rotary Youth Leadership Award", "Rotary", "2013"
+) %>%
+  brief_entries(award, year, from)
+```
 
-<!-- ## Scholarships -->
-<!-- ```{r} -->
-<!-- tribble( -->
-<!--   ~ scholarship, ~ from, ~ year, -->
-<!--   "Econometrics Honours Memorial Scholarship", "Monash", "2017", -->
-<!--   "Monash Community Leaders Scholarship", "Monash", "2015 & 2016", -->
-<!--   "Mitcham Rotary Scholarship", "Rotary", "2011 & 2012" -->
-<!-- ) %>%  -->
-<!--   brief_entries(scholarship, year, from) -->
-<!-- ``` -->
+## Scholarships
+```{r}
+tribble(
+  ~ scholarship, ~ from, ~ year,
+  "Econometrics Honours Memorial Scholarship", "Monash", "2017",
+  "Monash Community Leaders Scholarship", "Monash", "2015 & 2016",
+  "Mitcham Rotary Scholarship", "Rotary", "2011 & 2012"
+) %>%
+  brief_entries(scholarship, year, from)
+```
 
 
-<!-- ## Competitions -->
-<!-- ```{r} -->
-<!-- tribble( -->
-<!--   ~ competition, ~ from, ~ year, -->
-<!--   "UseR! 2018 Datathon Champion", "UseR!", "2018", -->
-<!--   "RMIT SBITL Analytics Competition Champion", "RMIT", "2017", -->
-<!--   "RMIT SBITL Analytics Competition Champion", "RMIT", "2016" -->
-<!-- ) %>%  -->
-<!--   brief_entries(competition, year, from) -->
-<!-- ``` -->
+## Competitions
+```{r}
+tribble(
+  ~ competition, ~ from, ~ year,
+  "UseR! 2018 Datathon Champion", "UseR!", "2018",
+  "RMIT SBITL Analytics Competition Champion", "RMIT", "2017",
+  "RMIT SBITL Analytics Competition Champion", "RMIT", "2016"
+) %>%
+  brief_entries(competition, year, from)
+```
