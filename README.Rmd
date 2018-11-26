@@ -1,0 +1,16 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+# Curriculum Vitae
+
+This repository contains the source files used to build my CV with my `vitae` package.
+You can learn more about the vitae package here: [https://github.com/ropenscilabs/vitae](https://github.com/ropenscilabs/vitae)
