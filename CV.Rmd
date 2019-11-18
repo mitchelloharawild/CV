@@ -24,12 +24,13 @@ knitr::opts_chunk$set(echo = FALSE)
 ```{r}
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
-  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2017 - Nov. 2017", "GPA of 3.875, WAM of 86.625",
-  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2017 - Nov. 2017", "Best in class for: Advanced statistical modelling (ETC3580), Bayesian time series econometrics (ETC4541), Applied econometrics 2 (ETC4410), Advanced topics in computational science (FIT4012), Honours Research Project (ETC4860)",
-  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "GPA of 3.688, WAM of 85.385",
-  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Mentored in the Access Monash Ambassador Program (2015 and 2016)",
-  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Participated in the Vice-Chancellor's Ancora Imparo Student Leadership Program (2014)",
-  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Best in class for: Business analytics (ETC3450), Business forecasting (ETC2450), Algorithms and data structures (FIT2004), Time series analysis for business and economics (ETC3450)"
+  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2017 - Nov. 2017", "Recipient of the Econometrics Honours Memorial Scholarship, Dean's Honour, Dean's Commendation, and best in class for 5 units.",
+  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2017 - Nov. 2017", "Honours research project was to develop a state space model for quickly forecasting time series with multiple seasonalities.",
+  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2017 - Nov. 2017", "Studied units include Bayesian and frequentist econometrics, advanced statistical modelling and computational science.",
+  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Recipient of the Monash Community Leaders Scholarship, International Institute of Forecasters Award, and best in class for 4 units.",
+  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Mentor for the Access Monash Ambassador Program (2015 and 2016)",
+  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Participant of the Vice-Chancellor's Ancora Imparo Student Leadership Program (2014)",
+  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Studied a broad collection of units covering many aspects of data science. The three disciplines I majored in explored different perspectives for working with data."
 ) %>% 
   detailed_entries(degree, dates, uni, loc, details)
 ```
