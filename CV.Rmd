@@ -92,38 +92,49 @@ series analysis", "ISI WSC, Kuala Lumpur, Malaysia", "Aug. 2019", "One day short
   detailed_entries(role, dates, course, location, details)
 ```
 
-# Software development
-
-fable
-forecast
-icon
-vitae
-tsibbledata
-tsfeatures
-feasts
-fabletools
-fable.prophet
-fasster
-taipan
-tsibble
-
-tidyverse developer day
-
 # Research experience
 
-## Academic contributions
+## Software development
 
-fasster, taipan, fable
+My primary research output is the translation of academic research into open source software packages.
 
-sugarbag
+```{r r-pkgs}
+tribble(
+  ~ pkg, ~ when, ~ role, ~ details,
+  "fable", "2019 - ", "Lead developer", "A collection of time series models for use in a tidyverse workflow.",
+  "fable.prophet", "2019 - ", "Lead developer", "Extension package implementing the prophet forecasting procedure for fable.",
+  "feasts", "2019 - ", "Lead developer", "Provides a collection of features, decompositions, statistical summaries and graphics functions for the analysing tidy time series data.",
+  "fabletools", "2019 - ", "Lead developer", "Implements the fable framework for analysing time series within a tidyverse workflow. This package is developer oriented, allowing developers to extend the framework with their own models and algorithms.",
+  "tsibbledata", "2019 - ", "Lead developer", "Diverse datasets in the 'tsibble' data structure. These datasets are useful for learning and demonstrating how tidy temporal data can tidied, visualised, and forecasted.",
+  "tsfeatures", "2019 - ", "Author", "Various methods for extracting features from time series data.",
+  "tsibble", "2018 - ", "Contributor", "Tidy temporal data structures and tools. The data for the tidy time series collection of packages.",
+  "vitae", "2018 - ", "Lead developer", "Dynamically generate a Résumé or CV using R Markdown. This CV is created using code with that package!",
+  "fasster", "2017 - ", "Lead developer", "An implementation of the FASSTER (Forecasting with Additive Switching of Seasonality, Trend and Exogenous Regressors) model in the fable framework. This is the model developed for my honours thesis.",
+  "icon", "2017 - ", "Lead developer", "Embed SVG icons in R documents such as slides, reports and apps.",
+  "taipan", "2018 - ", "Lead developer", "Generates shiny apps for annotating image data. Image annotations are typically used for training and evaluation of machine learning models.",
+  "ggquiver", "2017 - ", "Lead developer", "Extends ggplot2 for displaying vector fields on plots.",
+  "forecast", "2015 - ", "Author", "Methods and tools for displaying and analysing univariate time series forecasts including exponential smoothing via state space models and automatic ARIMA modelling."
+) %>% 
+  brief_entries(glue::glue("\\textbf{<pkg>}: <role> \\newline <details>", .open = "<", .close = ">"), when, .protect = FALSE)
+```
+
+<!-- ## Academic research -->
+
+<!-- fasster, taipan, fable -->
 
 ## Presentations
 
-https://www.meetup.com/en-AU/MelbURN-Melbourne-Users-of-R-Network/events/242402188/
-https://www.meetup.com/en-AU/Timeseries-Forecasting-and-Event-Analytics-Melbourne-Meetup/events/255450499/
-useR! 2018
-useR! 2019
-ISF19
+```{r talks}
+tribble(
+  ~ when, ~ title, ~ details, ~ where, ~ url,
+  "2019", "Flexible futures for fable functionality", "Gradual introduction to tidy forecasting with fable. Flexibility is demonstrated with combination modelling and package extensibilitiy.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
+  "2019", "Flexible futures for fable functionality", "Reconciled forecasting of many time series with model combinations.", "ISF 2019", "https://slides.mitchelloharawild.com/isf2019/",
+  "2018", "Tidy forecasting in R", "Discussion of recent developments to the fable framework.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
+  "2018", "Forecasting multiple seasonality with state switching", "The FASSTER model with the fable framework.", "useR! 2018", "https://slides.mitchelloharawild.com/user2018",
+  "2017", "Models for forecasting multiple seasonality", "An introduction to the FASSTER model.", "MelbURN meetup", "https://slides.mitchelloharawild.com/melburn17/",
+) %>% 
+  brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
+```
 
 <!-- # Relevant Skills -->
 <!-- ```{r} -->
