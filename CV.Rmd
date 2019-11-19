@@ -11,7 +11,9 @@ github: mitchelloharawild
 linkedin: mitchelloharawild
 twitter: mitchoharawild
 headcolor: 414141
-output: vitae::awesomecv
+output: 
+  vitae::awesomecv:
+    keep_tex: true
 ---
 
 ```{r setup, include=FALSE}
@@ -21,7 +23,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 # Education
-```{r}
+```{r education}
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
   "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2017 - Nov. 2017", "Recipient of the Econometrics Honours Memorial Scholarship, Dean's Honour, Dean's Commendation, and best in class for 5 units.",
@@ -37,7 +39,7 @@ tribble(
 
 # Data consulting experience
 
-```{r}
+```{r consulting}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
   "Data scientist", "Nectric", "Clayton, Australia", "Jan. 2019 - Present", "A variety of consulting projects with substantial spatio-temporal modelling tasks.",
@@ -53,27 +55,42 @@ tribble(
 
 ## University
 
-```{r}
-tribble(
-  ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Teaching Associate", "Monash University", "Caulfield & Clayton, Australia", "S1 2016 - Present", "Advanced statistical modelling (ETC3580)",
-  "Teaching Associate", "Monash University", "Caulfield & Clayton, Australia", "S1 2016 - Present", "Business forecasting (ETF3231/ETF5231)",
-  "Teaching Associate", "Monash University", "Caulfield & Clayton, Australia", "S1 2016 - Present", "Mathematics for business (ETF2700)",
-  "Teaching Associate", "Monash University", "Caulfield & Clayton, Australia", "S1 2016 - Present", "Data modelling and computing (ETC1010)"
-) %>% 
-  detailed_entries(role, dates, company, loc, details)
-```
+\footnotesize{
+My teaching quality at Monash University has been consistently recognised with positive student evaluations and individual praise from my students. I have also been awarded congratulatory letters for outstanding student evaluations for three of my units (ETF5231, ETC3580, ETC3550), which indicates that student feedback for the unit is among the best in the university.
+}
 
-Purple letters (ETF5231 S1 2018, ETC3580 S2 2018, ETC3550 S1 2019)
+```{r tutoring}
+tribble(
+  ~ role, ~ uni, ~ campus, ~ dates, ~ details,
+  "Teaching associate", "Monash University", "Clayton, Australia", "S1 2018 - Present", "Advanced statistical modelling (ETC3580)",
+  "Teaching associate", "Monash University", "Clayton, Australia", "S1 2018 - Present", "Data modelling and computing (ETC1010)",
+  "Teaching associate", "Monash University", "Clayton, Australia", "S1 2018 - Present", "Applied forecasting for business and economics (ETC3550)",
+  "Teaching associate", "Monash University", "Caulfield, Australia", "S1 2016 - S1 2018", "Business forecasting (ETF3231/ETF5231)",
+  "Teaching associate", "Monash University", "Caulfield, Australia", "S1 2016 - S1 2018", "Mathematics for business (ETF2700)",
+) %>% 
+  detailed_entries(role, dates, uni, campus, details)
+```
 
 ## Workshops
 
-fable rstudio::conf20
-shiny CSIRO
-fable WSC
-data wrangling ESSA
-gganimate NUMBAT
-https://blog.rstudio.com/2016/10/28/join-hadley-wickhams-master-r-workshop-in-melbourne-australia-december-12-13/
+\footnotesize{
+In addition to sessional teaching, I occasionally teach data analysis skills using R at workshops.
+}
+
+```{r workshops}
+tribble(
+  ~ role, ~ course, ~ location, ~ dates, ~ details,
+  "Teaching assistant", "Tidy Time Series and Forecasting in R", "rstudio::conf, San Francisco, California", "Jan. 2020", "Two day workshop with Rob Hyndman on forecasting using tidyverse workflows.",
+  "Instructor", "Interactive documents with Shiny", "CSIRO Canberra, Australia", "Nov. 2019", "Two day intermediate workshop on developing of shiny applications.",
+  "Instructor", "Data Wrangling", "Monash University Clayton, Australia", "Sep. 2019", "A short workshop in the student ran 'R Workshops for Beginners' series on using tidyr and dplyr to wrangle data.",
+  "Helper", "Tidyverse developer day", "RStudio, Toulouse France", "Jul. 2019", "A one day developer day where I helped R users resolve issues on tidyverse packages.",
+  "Teaching assistant", "High-dimensional time
+series analysis", "ISI WSC, Kuala Lumpur, Malaysia", "Aug. 2019", "One day short course with Rob Hyndman for analysing and forecasting large collections of time series.",
+  "Instructor", "The grammar of animation", "Monash University Clayton, Australia", "Mar. 2019", "A short workshop for NUMBAT group on creating animated graphics in R with gganimate",
+  "Teaching assistant", "Master R Developer Workshop", "RStudio, Melbourne Australia", "Dec. 2016", "A two day workshop with Hadley Wicham on programming with R and developing R packages.",
+) %>% 
+  detailed_entries(role, dates, course, location, details)
+```
 
 # Software development
 
