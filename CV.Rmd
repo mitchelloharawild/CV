@@ -3,7 +3,7 @@ name: Mitchell O'Hara-Wild
 date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: BCom(Hons), BSc
 position: Data Scientist
-address: 58 Madeleine Rd, Clayton
+address: Clayton, Victoria, Australia
 phone: +61 408 259 421
 email: mail@mitchelloharawild.com
 website: mitchelloharawild.com
