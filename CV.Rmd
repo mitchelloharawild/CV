@@ -56,7 +56,7 @@ tribble(
 ## University
 
 \footnotesize{
-My teaching quality at Monash University has been consistently recognised with positive student evaluations and individual praise from my students. I have also been awarded congratulatory letters for outstanding student evaluations for three of my units (ETF5231, ETC3580, ETC3550), which indicates that student feedback for the unit is among the best in the university.
+My teaching quality at Monash University has been consistently recognised with positive student evaluations and individual praise from my students. I have also been awarded four congratulatory letters for outstanding student evaluations for three of my units (ETF5231, ETC3580, ETC3550), which indicates that student feedback for the unit is among the best in the university.
 }
 
 ```{r tutoring}
