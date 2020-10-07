@@ -10,7 +10,7 @@ website: mitchelloharawild.com
 github: mitchelloharawild
 linkedin: mitchelloharawild
 twitter: mitchoharawild
-headcolor: 414141
+headcolor: "414141"
 output: 
   vitae::awesomecv:
     keep_tex: true
