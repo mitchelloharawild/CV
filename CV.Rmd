@@ -3,8 +3,7 @@ name: Mitchell O'Hara-Wild
 date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: BCom(Hons), BSc
 position: Data Scientist
-address: Clayton, Victoria, Australia
-phone: +61 408 259 421
+address: Melbourne, Australia
 email: mail@mitchelloharawild.com
 website: mitchelloharawild.com
 github: mitchelloharawild
@@ -22,119 +21,145 @@ library(vitae)
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-# Education
-```{r education}
-tribble(
-  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
-  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2017 - Nov. 2017", "Recipient of the Econometrics Honours Memorial Scholarship, Dean's Honour, Dean's Commendation, and best in class for 5 units.",
-  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2017 - Nov. 2017", "Honours research project was to develop a state space model for quickly forecasting time series with multiple seasonalities.",
-  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2017 - Nov. 2017", "Studied units include Bayesian and frequentist econometrics, advanced statistical modelling and computational science.",
-  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Recipient of the Monash Community Leaders Scholarship, International Institute of Forecasters Award, and best in class for 4 units.",
-  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Mentor for the Access Monash Ambassador Program (2015 and 2016)",
-  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Participant of the Vice-Chancellor's Ancora Imparo Student Leadership Program (2014)",
-  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", "Studied a broad collection of units covering many aspects of data science. The three disciplines I majored in explored different perspectives for working with data."
-) %>% 
-  detailed_entries(degree, dates, uni, loc, details)
-```
-
-# Data consulting experience
+# Current employment
 
 ```{r consulting}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Data scientist", "Nectric", "Clayton, Australia", "Jan. 2019 - Present", "A variety of consulting projects with substantial spatio-temporal modelling tasks.",
-  "Research assistant", "Monash University", "Clayton, Australia", "Jan. 2016 - Present", "Involved in many internal and external data projects of varying size and complexity.",
-  "Research assistant", "Monash University", "Clayton, Australia", "Jan. 2016 - Present", "Projects typically feature large scale time series modelling or analysis, cross-sectional modelling and creating tools for improving workflows.",
-  "Research assistant", "Monash University", "Clayton, Australia", "Jan. 2016 - Present", "Consulting project clients include: Huawei, Monash University, R Consortium, NSW Chief Scientist office, DiabetesLab and Tennis Australia.",
-  "Data mining intern", "iSelect", "Cheltenham, Australia", "Feb. 2015 - Mar. 2015", "Improved business reporting with interactive visualisations, and model-based anomaly detection.",
+  "Data scientist", "Nectric", "Melbourne, Australia", "Jan. 2019 - Present", 
+    list("Data science consulting projects including spatio-temporal modelling, and large scale forecasting.",
+         "Hosting workshops improving data literacy, development, analysis and modelling capabilities."
+    ),
+  "Research assistant", "Monash University", "Clayton, Australia", "Oct. 2015 - Present", 
+    list("Involved in many internal and external data projects of varying size and complexity.", 
+         "Projects typically feature large scale time series modelling or analysis, cross-sectional modelling and creating tools for improving workflows.",
+         "Consulting project clients include: Huawei, Monash University, R Consortium, NSW Chief Scientist office, DiabetesLab and Tennis Australia."),
+  "Teaching Associate", "Monash University", "Clayton, Australia", "Mar. 2016 - Present", "Sessional teaching of university students undertaking Bachelor's and Master's degrees. Specific classes are listed in 'Teaching experience'."
+  # "Data mining intern", "iSelect", "Cheltenham, Australia", "Feb. 2015 - Mar. 2015", "Improved business reporting with interactive visualisations, and model-based anomaly detection.",
 ) %>% 
   detailed_entries(role, dates, company, loc, details)
 ```
 
+# Education
+
+```{r education}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2017 - Nov. 2017", 
+    list("Recipient of the Econometrics Honours Memorial Scholarship, Dean's Honour, Dean's Commendation, and best in class for 5 units.",
+         "Honours research project was to develop a state space model for quickly forecasting time series with multiple seasonalities.",
+         "Studied units include Bayesian and frequentist econometrics, advanced statistical modelling and computational science."),
+  "BCom in Econometrics, BSc in Mathematical statistics and Computational Science", "Monash University", "Clayton, Australia", "Mar. 2013 - Nov. 2016", 
+    list("Recipient of the Monash Community Leaders Scholarship, International Institute of Forecasters Award, and best in class for 4 units.",
+         "Mentor for the Access Monash Ambassador Program (2015 and 2016)",
+         "Participant of the Vice-Chancellor's Ancora Imparo Student Leadership Program (2014)",
+         "Studied a broad range of units covering many aspects of data science. The three disciplines I majored in explored different perspectives for working with data.")
+) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
 # Teaching experience
 
-## University
+## University Tutoring
 
-\footnotesize{
-My teaching quality at Monash University has been consistently recognised with positive student evaluations and individual praise from my students. I have also been awarded four congratulatory letters for outstanding student evaluations for three of my units (ETF5231, ETC3580, ETC3550), which indicates that student feedback for the unit is among the best in the university.
-}
+<!-- My teaching quality at Monash University has been consistently recognised with positive student evaluations and individual praise from my students. I have also been awarded six congratulatory letters for outstanding student evaluations for four of my units (ETF5231, ETC3580, ETC3550, ETC5523), which indicates that student feedback for the unit is among the best in the university. -->
 
 ```{r tutoring}
 tribble(
-  ~ role, ~ uni, ~ campus, ~ dates, ~ details,
-  "Teaching associate", "Monash University", "Clayton, Australia", "S1 2018 - Present", "Advanced statistical modelling (ETC3580)",
-  "Teaching associate", "Monash University", "Clayton, Australia", "S1 2018 - Present", "Data modelling and computing (ETC1010)",
-  "Teaching associate", "Monash University", "Clayton, Australia", "S1 2018 - Present", "Applied forecasting for business and economics (ETC3550)",
-  "Teaching associate", "Monash University", "Caulfield, Australia", "S1 2016 - S1 2018", "Business forecasting (ETF3231/ETF5231)",
-  "Teaching associate", "Monash University", "Caulfield, Australia", "S1 2016 - S1 2018", "Mathematics for business (ETF2700)",
+  ~ title, ~ code, ~ campus, ~ semester, ~ purple,
+  "Applied forecasting", "ETC3550/ETC5550", "Clayton", "2021 S1", NA,
+  "Communicating with Data", "ETC5523", "Clayton", "2020 S2", TRUE,
+  "Applied forecasting", "ETC3550/ETC5550", "Clayton", "2020 S1", TRUE,
+  "Advanced statistical modelling", "ETC3580", "Clayton", "2019 S2", TRUE,
+  "Data modelling and computing", "ETC1010", "Clayton", "2019 S2", FALSE,
+  "Data modelling and computing", "ETC1010", "Clayton", "2019 S1", FALSE,
+  "Applied forecasting for business and economics", "ETC3550/ETC5550", "Clayton", "2019 S1", TRUE,
+  "Data modelling and computing", "ETC1010", "Clayton", "2018 S2", FALSE,
+  "Advanced statistical modelling", "ETC3580", "Clayton", "2018 S2", TRUE,
+  "Business forecasting", "ETF3231/ETF5231", "Caulfield", "2018 S1", TRUE,
+  "Data modelling and computing", "ETC1010", "Clayton", "2017 S2", FALSE,
+  "Business forecasting", "ETF3231/ETF5231", "Caulfield", "2017 S1", FALSE,
+  "Mathematics for business", "ETF2700", "Caulfield", "2016 S2", FALSE,
+  "Business forecasting", "ETF3231/ETF5231", "Caulfield", "2016 S1", FALSE
 ) %>% 
-  detailed_entries(role, dates, uni, campus, details)
+  brief_entries(glue::glue("\\textbf{<code>}: <title> (Monash <campus>)", .open = "<", .close = ">"), semester, .protect = FALSE)
 ```
 
-## Workshops
+\newpage
 
-\footnotesize{
-In addition to sessional teaching, I occasionally teach data analysis skills using R at workshops.
-}
+## Industry Workshops
+
+<!-- In addition to sessional tutoring, I also teach data analysis workshops for working professionals. -->
 
 ```{r workshops}
 tribble(
-  ~ role, ~ course, ~ location, ~ dates, ~ details,
-  "Teaching assistant", "Tidy Time Series and Forecasting in R", "rstudio::conf, San Francisco, California", "Jan. 2020", "Two day workshop with Rob Hyndman on forecasting using tidyverse workflows.",
-  "Instructor", "Interactive documents with Shiny", "CSIRO Canberra, Australia", "Nov. 2019", "Two day intermediate workshop on developing of shiny applications.",
-  "Instructor", "Data Wrangling", "Monash University Clayton, Australia", "Sep. 2019", "A short workshop in the student ran 'R Workshops for Beginners' series on using tidyr and dplyr to wrangle data.",
-  "Helper", "Tidyverse developer day", "RStudio, Toulouse France", "Jul. 2019", "A one day developer day where I helped R users resolve issues on tidyverse packages.",
-  "Teaching assistant", "High-dimensional time
-series analysis", "ISI WSC, Kuala Lumpur, Malaysia", "Aug. 2019", "One day short course with Rob Hyndman for analysing and forecasting large collections of time series.",
-  "Instructor", "The grammar of animation", "Monash University Clayton, Australia", "Mar. 2019", "A short workshop for NUMBAT group on creating animated graphics in R with gganimate",
-  "Teaching assistant", "Master R Developer Workshop", "RStudio, Melbourne Australia", "Dec. 2016", "A two day workshop with Hadley Wicham on programming with R and developing R packages.",
+  ~ role, ~ course, ~ organisation, ~ country, ~ dates, ~ details,
+  "Teaching assistant", "Tidy Time Series and Forecasting in R", "rstudio::conf", "USA", "Jan. 2020", "Two day workshop with Rob Hyndman on forecasting using tidyverse workflows.",
+  "Instructor", "Interactive documents with Shiny", "CSIRO", "Australia", "Nov. 2019", "Two day intermediate workshop on developing of shiny applications.",
+  "Instructor", "Data Wrangling", "Monash University", "Australia", "Sep. 2019", "A short workshop in the 'R Workshops for Beginners' series on using tidyr and dplyr to wrangle data.",
+  "Helper", "Tidyverse developer day", "RStudio", "France", "Jul. 2019", "A one day developer day where I helped R users resolve issues on tidyverse packages.",
+  "Teaching assistant", "High-dimensional time series analysis", "ISI WSC", "Malaysia", "Aug. 2019", "One day short course with Rob Hyndman for analysing and forecasting large collections of time series.",
+  "Instructor", "The grammar of animation", "Monash University", "Australia", "Mar. 2019", "A short workshop for NUMBAT group on creating animated graphics in R with the gganimate package.",
+  "Teaching assistant", "Master R Developer Workshop", "RStudio", "Australia", "Dec. 2016", "A two day workshop with Hadley Wicham on programming with R and developing R packages.",
 ) %>% 
-  detailed_entries(role, dates, course, location, details)
+  brief_entries(glue::glue("\\textbf{<course>}: <role> (<organisation>, <country>) \\newline <details>", .open = "<", .close = ">"), paste0(dates, "\\newline"), .protect = FALSE)
 ```
 
-# Research experience
+# Software development
 
-## Software development
-
-My primary research output is the translation of academic research into open source software packages.
+<!-- My primary research output is the translation of academic research into open source software packages. -->
 
 ```{r r-pkgs}
 tribble(
   ~ pkg, ~ when, ~ role, ~ details,
-  "fable", "2019 - ", "Lead developer", "A collection of time series models for use in a tidyverse workflow.",
-  "fable.prophet", "2019 - ", "Lead developer", "Extension package implementing the prophet forecasting procedure for fable.",
-  "feasts", "2019 - ", "Lead developer", "Provides a collection of features, decompositions, statistical summaries and graphics functions for the analysing tidy time series data.",
-  "fabletools", "2019 - ", "Lead developer", "Implements the fable framework for analysing time series within a tidyverse workflow. This package is developer oriented, allowing developers to extend the framework with their own models and algorithms.",
-  "tsibbledata", "2019 - ", "Lead developer", "Diverse datasets in the 'tsibble' data structure. These datasets are useful for learning and demonstrating how tidy temporal data can tidied, visualised, and forecasted.",
-  "tsfeatures", "2019 - ", "Author", "Various methods for extracting features from time series data.",
-  "tsibble", "2018 - ", "Contributor", "Tidy temporal data structures and tools. The data for the tidy time series collection of packages.",
-  "vitae", "2018 - ", "Lead developer", "Dynamically generate a Résumé or CV using R Markdown. This CV is created using code with that package!",
-  "fasster", "2017 - ", "Lead developer", "An implementation of the FASSTER (Forecasting with Additive Switching of Seasonality, Trend and Exogenous Regressors) model in the fable framework. This is the model developed for my honours thesis.",
-  "icon", "2017 - ", "Lead developer", "Embed SVG icons in R documents such as slides, reports and apps.",
-  "taipan", "2018 - ", "Lead developer", "Generates shiny apps for annotating image data. Image annotations are typically used for training and evaluation of machine learning models.",
-  "ggquiver", "2017 - ", "Lead developer", "Extends ggplot2 for displaying vector fields on plots.",
-  "forecast", "2015 - ", "Author", "Methods and tools for displaying and analysing univariate time series forecasts including exponential smoothing via state space models and automatic ARIMA modelling."
+  "distributional", "2020", "Lead developer", "Vectorised distribution objects with methods for manipulating and computing on probability distributions.",
+  "fable", "2019", "Lead developer", "A collection of time series models for use in a tidyverse workflow.",
+  "fable.prophet", "2019", "Lead developer", "Extension package implementing the prophet forecasting procedure for fable.",
+  "feasts", "2019", "Lead developer", "A collection of features, decompositions, statistics and graphics tools for the analysing tidy time series data.",
+  "fabletools", "2019", "Lead developer", "Provides common utilities for the fable forecasting framework, allows users to extend fable with new models.",
+  "tsibbledata", "2019", "Lead developer", "Diverse datasets in a tidy time series data structure (tsibble). Useful in examples of tidy time series analysis.",
+  "tsfeatures", "2019", "Author", "Various methods for extracting features from time series data.",
+  "tsibble", "2018", "Contributor", "Tidy temporal data structures and tools. The data for the tidy time series collection of packages.",
+  "vitae", "2018", "Lead developer", "Dynamically generate a Résumé or CV using R Markdown. This CV is created using code with that package!",
+  "fasster", "2017", "Lead developer", "Implementation of the FASSTER model for forecasting complex multiple seasonal patterns.",
+  "icon", "2017", "Lead developer", "Embed SVG icons in R documents such as slides, reports and apps.",
+  "taipan", "2018", "Lead developer", "Generates shiny apps for annotating image data, which is useful for training machine learning models.",
+  "ggquiver", "2017", "Lead developer", "Extends ggplot2 for displaying vector fields on plots.",
+  "forecast", "2015", "Author", "Methods and tools analysing univariate time series data and producing model-based forecasts."
 ) %>% 
-  brief_entries(glue::glue("\\textbf{<pkg>}: <role> \\newline <details>", .open = "<", .close = ">"), when, .protect = FALSE)
+  brief_entries(glue::glue("\\textbf{<pkg>}: <role> \\newline <details>", .open = "<", .close = ">"), paste0(when, "\\newline"), .protect = FALSE)
 ```
 
 <!-- ## Academic research -->
 
 <!-- fasster, taipan, fable -->
 
-## Presentations
+\newpage
+
+# Presentations
 
 ```{r talks}
 tribble(
   ~ when, ~ title, ~ details, ~ where, ~ url,
+  "2020", "Forecasting with multiple seasonality", "Methods and techniques to multiple seasonal forecasting in R", "UK NHS", "https://slides.mitchelloharawild.com/nhs2020/",
+  "2020", "Probabilistic cross-temporal hierarchies", "Recent developments of temporal reconciliation in fable.", "ISF", "https://slides.mitchelloharawild.com/isf2020/",
   "2019", "Flexible futures for fable functionality", "Gradual introduction to tidy forecasting with fable. Flexibility is demonstrated with combination modelling and package extensibilitiy.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
-  "2019", "Flexible futures for fable functionality", "Reconciled forecasting of many time series with model combinations.", "ISF 2019", "https://slides.mitchelloharawild.com/isf2019/",
+  "2019", "Flexible futures for fable functionality", "Reconciled forecasting of many time series with model combinations.", "ISF", "https://slides.mitchelloharawild.com/isf2019/",
   "2018", "Tidy forecasting in R", "Discussion of recent developments to the fable framework.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
-  "2018", "Forecasting multiple seasonality with state switching", "The FASSTER model with the fable framework.", "useR! 2018", "https://slides.mitchelloharawild.com/user2018",
+  "2018", "Forecasting multiple seasonality with state switching", "The FASSTER model with the fable framework.", "useR!", "https://slides.mitchelloharawild.com/user2018",
   "2017", "Models for forecasting multiple seasonality", "An introduction to the FASSTER model.", "MelbURN meetup", "https://slides.mitchelloharawild.com/melburn17/",
 ) %>% 
   brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
 ```
+
+<!-- # Data analysis projects -->
+
+<!-- # Related interests -->
+<!-- * Home automation -->
+<!-- * Beekeeping -->
+<!-- * Permaculture -->
+<!-- * Electronics design -->
+<!-- * Woodworking -->
 
 <!-- # Relevant Skills -->
 <!-- ```{r} -->
