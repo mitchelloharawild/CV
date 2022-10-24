@@ -33,7 +33,8 @@ tribble(
   "Research assistant", "Monash University", "Clayton, Australia", "Oct. 2015 - Present", 
     list("Involved in many internal and external data projects of varying size and complexity.", 
          "Projects typically feature large scale time series modelling or analysis, cross-sectional modelling and creating tools for improving workflows.",
-         "Consulting project clients include: Huawei, Monash University, R Consortium, NSW Chief Scientist office, DiabetesLab and Tennis Australia."),
+         "Consulting project clients include: COVID-19 Doherty Institute, Huawei, Monash University, R Consortium, and the NSW Chief Scientist office.",
+         "Developer for The R Journal, producing software for managing submitted articles and publishing them in both interactive HTML and static PDF."),
   "Teaching Associate", "Monash University", "Clayton, Australia", "Mar. 2016 - Present", "Sessional teaching of university students undertaking Bachelor's and Master's degrees. Specific classes are listed in 'Teaching experience'."
   # "Data mining intern", "iSelect", "Cheltenham, Australia", "Feb. 2015 - Mar. 2015", "Improved business reporting with interactive visualisations, and model-based anomaly detection.",
 ) %>% 
@@ -67,7 +68,9 @@ tribble(
 ```{r tutoring}
 tribble(
   ~ title, ~ code, ~ campus, ~ semester, ~ purple,
-  "Applied forecasting", "ETC3550/ETC5550", "Clayton", "2021 S1", NA,
+  "Applied forecasting", "ETC3550/ETC5550", "Clayton", "2022 S1", TRUE,
+  "Communicating with Data", "ETC5523", "Clayton", "2021 S2", FALSE,
+  "Applied forecasting", "ETC3550/ETC5550", "Clayton", "2021 S1", TRUE,
   "Communicating with Data", "ETC5523", "Clayton", "2020 S2", TRUE,
   "Applied forecasting", "ETC3550/ETC5550", "Clayton", "2020 S1", TRUE,
   "Advanced statistical modelling", "ETC3580", "Clayton", "2019 S2", TRUE,
@@ -105,13 +108,16 @@ tribble(
   brief_entries(glue::glue("\\textbf{<course>}: <role> (<organisation>, <country>) \\newline <details>", .open = "<", .close = ">"), paste0(dates, "\\newline"), .protect = FALSE)
 ```
 
-# Software development
 
-<!-- My primary research output is the translation of academic research into open source software packages. -->
+# Research output
+## Software
+
+My primary research output is the translation of academic research into open source software packages.
 
 ```{r r-pkgs}
 tribble(
   ~ pkg, ~ when, ~ role, ~ details,
+  "gghdr", "2022", "Author", "Extends ggplot2 with plot types for visualising highest density regions.",
   "distributional", "2020", "Lead developer", "Vectorised distribution objects with methods for manipulating and computing on probability distributions.",
   "fable", "2019", "Lead developer", "A collection of time series models for use in a tidyverse workflow.",
   "fable.prophet", "2019", "Lead developer", "Extension package implementing the prophet forecasting procedure for fable.",
@@ -121,8 +127,9 @@ tribble(
   "tsfeatures", "2019", "Author", "Various methods for extracting features from time series data.",
   "tsibble", "2018", "Contributor", "Tidy temporal data structures and tools. The data for the tidy time series collection of packages.",
   "vitae", "2018", "Lead developer", "Dynamically generate a Résumé or CV using R Markdown. This CV is created using code with that package!",
+  "cransays", "2018", "Author", "Provides a dashboard and historical data for R packages being reviewed by CRAN.",
   "fasster", "2017", "Lead developer", "Implementation of the FASSTER model for forecasting complex multiple seasonal patterns.",
-  "icon", "2017", "Lead developer", "Embed SVG icons in R documents such as slides, reports and apps.",
+  "icons", "2017", "Lead developer", "Embed SVG icons in R documents such as slides, reports and apps.",
   "taipan", "2018", "Lead developer", "Generates shiny apps for annotating image data, which is useful for training machine learning models.",
   "ggquiver", "2017", "Lead developer", "Extends ggplot2 for displaying vector fields on plots.",
   "forecast", "2015", "Author", "Methods and tools analysing univariate time series data and producing model-based forecasts."
@@ -136,7 +143,7 @@ tribble(
 
 \newpage
 
-# Presentations
+## Presentations
 
 ```{r talks}
 tribble(
@@ -150,6 +157,12 @@ tribble(
   "2017", "Models for forecasting multiple seasonality", "An introduction to the FASSTER model.", "MelbURN meetup", "https://slides.mitchelloharawild.com/melburn17/",
 ) %>% 
   brief_entries(glue::glue("\\textbf{<title>}: <details> \\newline \\url{<url>}", .open = "<", .close = ">"), when, .protect = FALSE)
+```
+
+## Publications
+
+```{r}
+bibliography_entries("publications.bib")
 ```
 
 <!-- # Data analysis projects -->
@@ -167,40 +180,39 @@ tribble(
 <!-- cvskill("Programming", c("R", "Python", "SQL", "Java", "C", "C++", "HTML/CSS", "TeX", "MATLAB")) -->
 <!-- ``` -->
 
-<!-- # Awards & Achievements -->
-<!-- ## Awards -->
-<!-- ```{r} -->
-<!-- tribble( -->
-<!--   ~ award, ~ from, ~ year, -->
-<!--   "Commerce Dean's Honour", "Monash", "2017", -->
-<!--   "Commerce Dean's Commendation", "Monash", "2016", -->
-<!--   "Science Dean’s List", "Monash", "2014-2016", -->
-<!--   "International Institute of Forecasters Award", "IIF", "2014", -->
-<!--   "Rotary Youth Leadership Award", "Rotary", "2013" -->
-<!-- ) %>% -->
-<!--   brief_entries(award, year, from) -->
-<!-- ``` -->
+# Awards & Achievements
+## Awards
+```{r}
+tribble(
+  ~ award, ~ from, ~ year,
+  "Dean’s Citation for Outstanding Contribution to Student Learning as a Teaching Associate", "Monash", "2021",
+  "Commerce Dean's Honour", "Monash", "2017",
+  "Commerce Dean's Commendation", "Monash", "2016",
+  "Science Dean’s List", "Monash", "2014-2016",
+  "International Institute of Forecasters Award", "IIF", "2014",
+  "Rotary Youth Leadership Award", "Rotary", "2013"
+) %>%
+  brief_entries(award, year, from)
+```
 
-<!-- ## Scholarships -->
-<!-- ```{r} -->
-<!-- tribble( -->
-<!--   ~ scholarship, ~ from, ~ year, -->
-<!--   "Econometrics Honours Memorial Scholarship", "Monash", "2017", -->
-<!--   "Monash Community Leaders Scholarship", "Monash", "2015 & 2016", -->
-<!--   "Mitcham Rotary Scholarship", "Rotary", "2011 & 2012" -->
-<!-- ) %>% -->
-<!--   brief_entries(scholarship, year, from) -->
-<!-- ``` -->
+## Scholarships
+```{r}
+tribble(
+  ~ scholarship, ~ from, ~ year,
+  "Econometrics Honours Memorial Scholarship", "Monash", "2017",
+  "Monash Community Leaders Scholarship", "Monash", "2015 & 2016",
+  "Mitcham Rotary Scholarship", "Rotary", "2011 & 2012"
+) %>%
+  brief_entries(scholarship, year, from)
+```
 
-<!-- \hspace{3em} -->
-
-<!-- ## Competitions -->
-<!-- ```{r} -->
-<!-- tribble( -->
-<!--   ~ competition, ~ from, ~ year, -->
-<!--   "UseR! 2018 Datathon Champion", "UseR!", "2018", -->
-<!--   "RMIT SBITL Analytics Competition Champion", "RMIT", "2017", -->
-<!--   "RMIT SBITL Analytics Competition Champion", "RMIT", "2016" -->
-<!-- ) %>% -->
-<!--   brief_entries(competition, year, from) -->
-<!-- ``` -->
+## Competitions
+```{r}
+tribble(
+  ~ competition, ~ from, ~ year,
+  "UseR! 2018 Datathon Champion", "UseR!", "2018",
+  "RMIT SBITL Analytics Competition Champion", "RMIT", "2017",
+  "RMIT SBITL Analytics Competition Champion", "RMIT", "2016"
+) %>%
+  brief_entries(competition, year, from)
+```
