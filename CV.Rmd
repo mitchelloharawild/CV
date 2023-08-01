@@ -26,7 +26,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```{r consulting}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Data scientist", "Nectric", "Melbourne, Australia", "Jan. 2019 - Present", 
+  "Data science consultant", "Nectric", "Melbourne, Australia", "Jan. 2019 - Present", 
     list("Data science consulting projects including spatio-temporal modelling, and large scale forecasting.",
          "Hosting workshops improving data literacy, development, analysis and modelling capabilities."
     ),
@@ -35,7 +35,7 @@ tribble(
          "Projects typically feature large scale time series modelling or analysis, cross-sectional modelling and creating tools for improving workflows.",
          "Consulting project clients include: COVID-19 Doherty Institute, Huawei, Monash University, R Consortium, and the NSW Chief Scientist office.",
          "Developer for The R Journal, producing software for managing submitted articles and publishing them in both interactive HTML and static PDF."),
-  "Teaching Associate", "Monash University", "Clayton, Australia", "Mar. 2016 - Present", "Sessional teaching of university students undertaking Bachelor's and Master's degrees. Specific classes are listed in 'Teaching experience'."
+  "Teaching Associate", "Monash University", "Clayton, Australia", "Mar. 2016 - Present", "Sessional teaching of university students undertaking Bachelor's and Master's degrees."
   # "Data mining intern", "iSelect", "Cheltenham, Australia", "Feb. 2015 - Mar. 2015", "Improved business reporting with interactive visualisations, and model-based anomaly detection.",
 ) %>% 
   detailed_entries(role, dates, company, loc, details)
@@ -46,6 +46,9 @@ tribble(
 ```{r education}
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "PhD in Econometrics", "Monash University", "Clayton, Australia", "Feb. 2023 - Present", 
+    list("Recipient of the Monash Graduate Excellence Scholarship.",
+         "Research in forecast reconciliation and the design of statistical software for forecasting."),
   "BCom (Hons) in Econometrics", "Monash University", "Clayton, Australia", "Mar. 2017 - Nov. 2017", 
     list("Recipient of the Econometrics Honours Memorial Scholarship, Dean's Honour, Dean's Commendation, and best in class for 5 units.",
          "Honours research project was to develop a state space model for quickly forecasting time series with multiple seasonalities.",
@@ -63,47 +66,52 @@ tribble(
 
 ## University Tutoring
 
-<!-- My teaching quality at Monash University has been consistently recognised with positive student evaluations and individual praise from my students. I have also been awarded six congratulatory letters for outstanding student evaluations for four of my units (ETF5231, ETC3580, ETC3550, ETC5523), which indicates that student feedback for the unit is among the best in the university. -->
-
-```{r tutoring}
-tribble(
-  ~ title, ~ code, ~ campus, ~ semester, ~ purple,
-  "Applied forecasting", "ETC3550/ETC5550", "Clayton", "2022 S1", TRUE,
-  "Communicating with Data", "ETC5523", "Clayton", "2021 S2", FALSE,
-  "Applied forecasting", "ETC3550/ETC5550", "Clayton", "2021 S1", TRUE,
-  "Communicating with Data", "ETC5523", "Clayton", "2020 S2", TRUE,
-  "Applied forecasting", "ETC3550/ETC5550", "Clayton", "2020 S1", TRUE,
-  "Advanced statistical modelling", "ETC3580", "Clayton", "2019 S2", TRUE,
-  "Data modelling and computing", "ETC1010", "Clayton", "2019 S2", FALSE,
-  "Data modelling and computing", "ETC1010", "Clayton", "2019 S1", FALSE,
-  "Applied forecasting for business and economics", "ETC3550/ETC5550", "Clayton", "2019 S1", TRUE,
-  "Data modelling and computing", "ETC1010", "Clayton", "2018 S2", FALSE,
-  "Advanced statistical modelling", "ETC3580", "Clayton", "2018 S2", TRUE,
-  "Business forecasting", "ETF3231/ETF5231", "Caulfield", "2018 S1", TRUE,
-  "Data modelling and computing", "ETC1010", "Clayton", "2017 S2", FALSE,
-  "Business forecasting", "ETF3231/ETF5231", "Caulfield", "2017 S1", FALSE,
-  "Mathematics for business", "ETF2700", "Caulfield", "2016 S2", FALSE,
-  "Business forecasting", "ETF3231/ETF5231", "Caulfield", "2016 S1", FALSE
-) %>% 
-  brief_entries(glue::glue("\\textbf{<code>}: <title> (Monash <campus>)", .open = "<", .close = ">"), semester, .protect = FALSE)
-```
+\begin{cvparagraph}
+My teaching quality at Monash University has been consistently recognised with positive student evaluations and individual praise from my students. I generally teach applied forecasting and data analysis skills that give students a practical toolkit for working with data in industry. I have also been awarded seven congratulatory letters for outstanding student evaluations which indicates that the unit's teaching is among the best in the university.
+\end{cvparagraph}
+<!-- ```{r tutoring} -->
+<!-- tribble( -->
+<!--   ~ title, ~ code, ~ campus, ~ semester, ~ purple, -->
+<!--   "Applied forecasting", "ETC3550/ETC5550", "Clayton", "2022 S1", TRUE, -->
+<!--   "Communicating with Data", "ETC5523", "Clayton", "2021 S2", FALSE, -->
+<!--   "Applied forecasting", "ETC3550/ETC5550", "Clayton", "2021 S1", TRUE, -->
+<!--   "Communicating with Data", "ETC5523", "Clayton", "2020 S2", TRUE, -->
+<!--   "Applied forecasting", "ETC3550/ETC5550", "Clayton", "2020 S1", TRUE, -->
+<!--   "Advanced statistical modelling", "ETC3580", "Clayton", "2019 S2", TRUE, -->
+<!--   "Data modelling and computing", "ETC1010", "Clayton", "2019 S2", FALSE, -->
+<!--   "Data modelling and computing", "ETC1010", "Clayton", "2019 S1", FALSE, -->
+<!--   "Applied forecasting for business and economics", "ETC3550/ETC5550", "Clayton", "2019 S1", TRUE, -->
+<!--   "Data modelling and computing", "ETC1010", "Clayton", "2018 S2", FALSE, -->
+<!--   "Advanced statistical modelling", "ETC3580", "Clayton", "2018 S2", TRUE, -->
+<!--   "Business forecasting", "ETF3231/ETF5231", "Caulfield", "2018 S1", TRUE, -->
+<!--   "Data modelling and computing", "ETC1010", "Clayton", "2017 S2", FALSE, -->
+<!--   "Business forecasting", "ETF3231/ETF5231", "Caulfield", "2017 S1", FALSE, -->
+<!--   "Mathematics for business", "ETF2700", "Caulfield", "2016 S2", FALSE, -->
+<!--   "Business forecasting", "ETF3231/ETF5231", "Caulfield", "2016 S1", FALSE -->
+<!-- ) %>%  -->
+<!--   brief_entries(glue::glue("\\textbf{<code>}: <title> (Monash <campus>)", .open = "<", .close = ">"), semester, .protect = FALSE) -->
+<!-- ``` -->
 
 \newpage
 
 ## Industry Workshops
 
-<!-- In addition to sessional tutoring, I also teach data analysis workshops for working professionals. -->
+\begin{cvparagraph}
+In addition to sessional tutoring, I also teach data analysis workshops for industry professionals.
+\end{cvparagraph}
 
 ```{r workshops}
 tribble(
   ~ role, ~ course, ~ organisation, ~ country, ~ dates, ~ details,
+  "Instructor", "Tidy Time Series and Forecasting in R", "NYR", "USA", "Jul. 2023", "Two day workshop on forecasting using tidy forecasting tools in R.",
+  "Instructor", "Interactive web applications with Shiny", "WOMBAT", "Australia", "Dec. 2022", "Half-day workshop on the basics of shiny applications.",
   "Teaching assistant", "Tidy Time Series and Forecasting in R", "rstudio::conf", "USA", "Jan. 2020", "Two day workshop with Rob Hyndman on forecasting using tidyverse workflows.",
   "Instructor", "Interactive documents with Shiny", "CSIRO", "Australia", "Nov. 2019", "Two day intermediate workshop on developing of shiny applications.",
   "Instructor", "Data Wrangling", "Monash University", "Australia", "Sep. 2019", "A short workshop in the 'R Workshops for Beginners' series on using tidyr and dplyr to wrangle data.",
   "Helper", "Tidyverse developer day", "RStudio", "France", "Jul. 2019", "A one day developer day where I helped R users resolve issues on tidyverse packages.",
   "Teaching assistant", "High-dimensional time series analysis", "ISI WSC", "Malaysia", "Aug. 2019", "One day short course with Rob Hyndman for analysing and forecasting large collections of time series.",
-  "Instructor", "The grammar of animation", "Monash University", "Australia", "Mar. 2019", "A short workshop for NUMBAT group on creating animated graphics in R with the gganimate package.",
-  "Teaching assistant", "Master R Developer Workshop", "RStudio", "Australia", "Dec. 2016", "A two day workshop with Hadley Wicham on programming with R and developing R packages.",
+  # "Instructor", "The grammar of animation", "Monash University", "Australia", "Mar. 2019", "A short workshop for NUMBAT group on creating animated graphics in R with the gganimate package.",
+  # "Teaching assistant", "Master R Developer Workshop", "RStudio", "Australia", "Dec. 2016", "A two day workshop with Hadley Wicham on programming with R and developing R packages.",
 ) %>% 
   brief_entries(glue::glue("\\textbf{<course>}: <role> (<organisation>, <country>) \\newline <details>", .open = "<", .close = ">"), paste0(dates, "\\newline"), .protect = FALSE)
 ```
@@ -112,9 +120,11 @@ tribble(
 # Research output
 ## Software
 
-My primary research output is the translation of academic research into open source software packages.
+\begin{cvparagraph}
+My primary research output is the translation of academic research into open source software packages. In total I have been the lead developer or a substantial contributor to more than 20 open source R packages, many of which provide tools for analysing time series data and visualisations. This software has a significant impact to the industry, with the total average unique monthly downloads exceeding 100,000.
+\end{cvparagraph}
 
-```{r r-pkgs}
+```{r r-pkgs, include = FALSE}
 tribble(
   ~ pkg, ~ when, ~ role, ~ details,
   "gghdr", "2022", "Author", "Extends ggplot2 with plot types for visualising highest density regions.",
@@ -141,13 +151,14 @@ tribble(
 
 <!-- fasster, taipan, fable -->
 
-\newpage
-
 ## Presentations
 
 ```{r talks}
 tribble(
   ~ when, ~ title, ~ details, ~ where, ~ url,
+  "2023", "From forecast to fable, design decisions for statistical software", "A comparison of the design differences between forecast and fable.", "NYR", "https://slides.mitchelloharawild.com/nyr2023/",
+  "2023", "Reconciliation of structured time series forecasts with graphs", "Reconciling forecasts with graph constraints.", "ISF", "https://slides.mitchelloharawild.com/reconciling-graphs/",
+  "2023", "The design of statistical software", "Discussion about design principles of user interfaces for statistics.", "NUMBAT Seminar", "https://slides.mitchelloharawild.com/statistical-software-design/",
   "2020", "Forecasting with multiple seasonality", "Methods and techniques to multiple seasonal forecasting in R", "UK NHS", "https://slides.mitchelloharawild.com/nhs2020/",
   "2020", "Probabilistic cross-temporal hierarchies", "Recent developments of temporal reconciliation in fable.", "ISF", "https://slides.mitchelloharawild.com/isf2020/",
   "2019", "Flexible futures for fable functionality", "Gradual introduction to tidy forecasting with fable. Flexibility is demonstrated with combination modelling and package extensibilitiy.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
@@ -180,12 +191,15 @@ bibliography_entries("publications.bib")
 <!-- cvskill("Programming", c("R", "Python", "SQL", "Java", "C", "C++", "HTML/CSS", "TeX", "MATLAB")) -->
 <!-- ``` -->
 
+\newpage
+
 # Awards & Achievements
 ## Awards
 ```{r}
 tribble(
   ~ award, ~ from, ~ year,
-  "Dean’s Citation for Outstanding Contribution to Student Learning as a Teaching Associate", "Monash", "2021",
+  "Student Presentation Award", "ISF", "2023",
+  "Dean's Citation for Outstanding Contribution to Student Learning as a Teaching Associate", "Monash", "2021",
   "Commerce Dean's Honour", "Monash", "2017",
   "Commerce Dean's Commendation", "Monash", "2016",
   "Science Dean’s List", "Monash", "2014-2016",
@@ -199,6 +213,7 @@ tribble(
 ```{r}
 tribble(
   ~ scholarship, ~ from, ~ year,
+  "Monash Graduate Excellence Scholarship", "Monash", "2023 - 2026",
   "Econometrics Honours Memorial Scholarship", "Monash", "2017",
   "Monash Community Leaders Scholarship", "Monash", "2015 & 2016",
   "Mitcham Rotary Scholarship", "Rotary", "2011 & 2012"
