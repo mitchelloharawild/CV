@@ -62,6 +62,8 @@ tribble(
   detailed_entries(degree, dates, uni, loc, details)
 ```
 
+\newpage
+
 # Teaching experience
 
 ## University Tutoring
@@ -95,8 +97,6 @@ My teaching quality at Monash University has been consistently recognised with p
 <!--   brief_entries(glue::glue("\\textbf{<code>}: <title> (Monash <campus>)", .open = "<", .close = ">"), semester, .protect = FALSE) -->
 <!-- ``` -->
 
-\newpage
-
 ## Workshops and trainings
 
 \begin{cvparagraph}
@@ -106,9 +106,13 @@ In addition to sessional tutoring, I also teach data analysis workshops for indu
 ```{r workshops}
 tribble(
   ~ role, ~ course, ~ organisation, ~ country, ~ dates, ~ details,
-  # "Instructor", "Tidy time series analysis and forecasting", "useR!", "Austria", "Jul.  2024", "Quick-start workshop for tidy forecasting in R",
-  # "Instructor", "Tidy time series analysis and forecasting", "R/Medicine", "Online", "Jun. 2024", "Quick-start workshop for tidy forecasting in R",
-  "Instructor", "Interactive web applications with Shiny for R", "SSA", "Online", "Dec. 2023", "Booked out 3-hour online quick-start workshop for the basics of shiny",
+  "Instructor", "Advanced R Tips and Tricks", "WOMBAT", "Australia", "Oct. 2024", "Half-day workshop on advanced R programming.",
+  "Instructor", "Interactive web applications with Shiny for R", "WOMBAT", "Australia", "Oct. 2024", "Half-day workshop on creating interactive web applications in R using Shiny.",
+  "Instructor", "Tidy Time Series and Forecasting in R", "Dept. Edu", "Australia", "Oct. 2023", "Two day workshop on forecasting using tidy forecasting tools in R.",
+  "Instructor", "AFRICAST: Tidy forecasting for social good", "F4SG", "Online", "Sept. 2024", "Five day workshop on forecasting for 181 students from 32 Sub-Saharan African countries.",
+  "Instructor", "Tidy time series analysis and forecasting", "useR!", "Austria", "Jul.  2024", "Quick-start workshop for tidy forecasting in R.",
+  "Instructor", "Tidy time series analysis and forecasting", "R/Medicine", "Online", "Jun. 2024", "Quick-start workshop for tidy forecasting in R.",
+  "Instructor", "Interactive web applications with Shiny for R", "SSA", "Online", "Dec. 2023", "Booked out 3-hour online quick-start workshop for the basics of Shiny.",
   "Instructor", "AFRICAST: Tidy forecasting for social good", "F4SG", "Online", "Oct. 2023", "Five day workshop on forecasting for 62 students from 9 Sub-Saharan African countries.",
   "Instructor", "Tidy Time Series and Forecasting in R", "NYR", "USA", "Jul. 2023", "Two day workshop on forecasting using tidy forecasting tools in R.",
   "Instructor", "Interactive web applications with Shiny", "WOMBAT", "Australia", "Dec. 2022", "Half-day workshop on the basics of shiny applications.",
@@ -117,11 +121,13 @@ tribble(
   "Instructor", "Data Wrangling", "Monash University", "Australia", "Sep. 2019", "A short workshop in the 'R Workshops for Beginners' series on using tidyr and dplyr to wrangle data.",
   "Helper", "Tidyverse developer day", "RStudio", "France", "Jul. 2019", "A one day developer day where I helped R users resolve issues on tidyverse packages.",
   "Teaching assistant", "High-dimensional time series analysis", "ISI WSC", "Malaysia", "Aug. 2019", "One day short course with Rob Hyndman for analysing and forecasting large collections of time series.",
-  # "Instructor", "The grammar of animation", "Monash University", "Australia", "Mar. 2019", "A short workshop for NUMBAT group on creating animated graphics in R with the gganimate package.",
-  # "Teaching assistant", "Master R Developer Workshop", "RStudio", "Australia", "Dec. 2016", "A two day workshop with Hadley Wicham on programming with R and developing R packages.",
+  "Instructor", "The grammar of animation", "Monash University", "Australia", "Mar. 2019", "A short workshop for NUMBAT group on creating animated graphics in R with the gganimate package.",
+  "Teaching assistant", "Master R Developer Workshop", "RStudio", "Australia", "Dec. 2016", "A two day workshop with Hadley Wicham on programming with R and developing R packages.",
 ) %>% 
   brief_entries(glue::glue("\\textbf{<course>}: <role> (<organisation>, <country>) \\newline <details>", .open = "<", .close = ">"), paste0(dates, "\\newline"), .protect = FALSE)
 ```
+
+\newpage
 
 
 # Research output
@@ -163,7 +169,10 @@ tribble(
 ```{r talks}
 tribble(
   ~ when, ~ title, ~ details, ~ where, ~ url,
-  "2023", "Creating flexible e-learning quizzes with literate programming", "Using literate programming to create Moodle quizzes", "NYR", "https://slides.mitchelloharawild.com/moodlequiz/",
+  "2024", "Scalable self-paced e-learning with automated feedback", "Using e-learning technology for teaching at scale.", "WOMBAT", "https://slides.mitchelloharawild.com/wombat2024/",
+  "2024", "Statistical computing with vectorised operations on distributions", "Introducing the distributional package for R.", "useR!", "https://slides.mitchelloharawild.com/user2024/",
+  "2024", "Feature based graph pruning for improved forecast reconciliation", "Large scale forecast reconciliation with reduced complexity.", "ISF", "https://slides.mitchelloharawild.com/pruning-graphs/",
+  "2023", "Creating flexible e-learning quizzes with literate programming", "Using literate programming to create Moodle quizzes.", "NYR", "https://slides.mitchelloharawild.com/moodlequiz/",
   "2023", "From forecast to fable, design decisions for statistical software", "A comparison of the design differences between forecast and fable.", "NYR", "https://slides.mitchelloharawild.com/nyr2023/",
   "2023", "Reconciliation of structured time series forecasts with graphs", "Reconciling forecasts with graph constraints.", "ISF", "https://slides.mitchelloharawild.com/reconciling-graphs/",
   "2023", "The design of statistical software", "Discussion about design principles of user interfaces for statistics.", "NUMBAT Seminar", "https://slides.mitchelloharawild.com/statistical-software-design/",
@@ -183,6 +192,8 @@ tribble(
 ```{r}
 bibliography_entries("publications.bib")
 ```
+
+\newpage
 
 <!-- # Data analysis projects -->
 
