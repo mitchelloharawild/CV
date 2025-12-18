@@ -133,7 +133,13 @@ tribble(
 ```{r talks}
 tribble(
   ~ when, ~ title, ~ details, ~ where, ~ url,
-  "2025", "Probabilistic forecast combinations", "Introduction to ensemble, decomposition, and coherent forecasting", "ACEFA Launch", "https://slides.mitchelloharawild.com/acefa-launch/",
+  "2025", "Vectorised Statistics with Composite Data Types", "Mixed-type semantic vectors and statistics.", "ASC", "https://slides.mitchelloharawild.com/asc2025/",
+  # "2025", "Accessible and extensible design for statistical computing on distributions", "How design democratises statistical computing.", "RSAA", "https://slides.mitchelloharawild.com/rsaa25/",
+  "2025", "Visualizing time with ggtime’s grammar of temporal graphics", "Better time series visualisation tools.", "useR!", "https://slides.mitchelloharawild.com/user2025/",
+  "2025", "ggtime: Visualizing time with a grammar of temporal graphics", "Extending ggplot2 with ggtime.", "JSM", "https://slides.mitchelloharawild.com/jsm2025/",
+  "2025", "Calendar-based exploratory time series analysis", "Composable time vectors and visualisation tools.", "ISF", "https://slides.mitchelloharawild.com/isf2025/",
+  "2025", "Designing extensible forecasting frameworks", "Creating tidy forecasting systems and tools.", "IIF OSF", "https://slides.mitchelloharawild.com/iif-osf/",
+  "2025", "Probabilistic forecast combinations", "Introduction to ensemble, decomposition, and coherent forecasting.", "ACEFA Launch", "https://slides.mitchelloharawild.com/acefa-launch/",
   "2025", "Designing ggtime: A grammar of temporal graphics", "A discussion about ggplot2 extension design.", "ggplot extension club", "https://slides.mitchelloharawild.com/ggextenders-ggtime/",
   "2024", "Scalable self-paced e-learning with automated feedback", "Using e-learning for teaching at scale.", "WOMBAT", "https://slides.mitchelloharawild.com/wombat2024/",
   "2024", "Statistical computing with vectorised operations on distributions", "Introducing distributional for R.", "useR!", "https://slides.mitchelloharawild.com/user2024/",
@@ -141,12 +147,12 @@ tribble(
   "2023", "Creating flexible e-learning quizzes with literate programming", "Literate programming Moodle quizzes.", "NYR", "https://slides.mitchelloharawild.com/moodlequiz/",
   "2023", "From forecast to fable, design decisions for statistical software", "Design changes from forecast to fable.", "NYR", "https://slides.mitchelloharawild.com/nyr2023/",
   "2023", "Reconciliation of structured time series forecasts with graphs", "Coherent forecasting with graphs.", "ISF", "https://slides.mitchelloharawild.com/reconciling-graphs/",
-  "2023", "The design of statistical software", "Discussion about design principles of user interfaces for statistics.", "NUMBAT Seminar", "https://slides.mitchelloharawild.com/statistical-software-design/",
+  # "2023", "The design of statistical software", "Discussion about design principles of user interfaces for statistics.", "NUMBAT Seminar", "https://slides.mitchelloharawild.com/statistical-software-design/",
   "2020", "Forecasting with multiple seasonality", "Methods and techniques to multiple seasonal forecasting in R", "UK NHS", "https://slides.mitchelloharawild.com/nhs2020/",
   "2020", "Probabilistic cross-temporal hierarchies", "Recent developments of temporal reconciliation in fable.", "ISF", "https://slides.mitchelloharawild.com/isf2020/",
-  "2019", "Flexible futures for fable functionality", "Introduction to extensible tidy forecasting with fable.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
+  # "2019", "Flexible futures for fable functionality", "Introduction to extensible tidy forecasting with fable.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
   "2019", "Flexible futures for fable functionality", "Reconciled forecasting of time series with model combinations.", "ISF", "https://slides.mitchelloharawild.com/isf2019/",
-  "2018", "Tidy forecasting in R", "Discussion of recent developments to the fable framework.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
+  # "2018", "Tidy forecasting in R", "Discussion of recent developments to the fable framework.", "MelbURN meetup", "https://slides.mitchelloharawild.com/fable-tfeam/",
   "2018", "Forecasting multiple seasonality with state switching", "The FASSTER model with the fable framework.", "useR!", "https://slides.mitchelloharawild.com/user2018",
   "2017", "Models for forecasting multiple seasonality", "An introduction to the FASSTER model.", "MelbURN meetup", "https://slides.mitchelloharawild.com/melburn17/",
 ) %>% 
@@ -235,6 +241,7 @@ In addition to on-campus teaching, I also teach data analysis workshops to peopl
 ```{r workshops}
 tribble(
   ~ role, ~ course, ~ organisation, ~ country, ~ dates, ~ details,
+  # "Instructor", "Tidy time series analysis and forecasting", "WOMBAT", "Australia", "Sep. 2025", "Half-day workshop on time series forecasting with the fable package.",
   "Instructor", "Exploratory time series analysis", "ISF", "Online", "June 2025", "Half-day workshop on visually exploring tidy time series data.",
   "Instructor", "Tidy time series analysis and forecasting", "SSA", "Online", "May 2025", "Half-day workshop on time series forecasting with the fable package.",
   "Instructor", "Advanced R Tips and Tricks", "WOMBAT", "Australia", "Oct. 2024", "Half-day workshop on advanced R programming.",
@@ -280,6 +287,7 @@ tribble(
 ```{r}
 tribble(
   ~ award, ~ from, ~ year,
+  "Pitman Prize Honourable Mention", "SSA", "2025",
   "Student Presentation Award", "ISF", "2023",
   "Dean's Citation for Outstanding Contribution to Student Learning as a Teaching Associate", "Monash", "2021",
   "Commerce Dean's Honour", "Monash", "2017",
@@ -317,6 +325,6 @@ tribble(
 <!--   brief_entries(competition, year, from) -->
 <!-- ``` -->
 
-# Personal projects
+<!-- # Personal projects
 
-I am passionate about permaculture and sustainability, a proud keeper of bees and chickens, and grower of fruits, vegetables and mushrooms. I blend my expertise in data analysis and engineering with my love of nature to monitor and maintain the ecosystems I create. My latest project is designing networked sensors for wide-area sampling of the local environment, primarily using ecoacoustics to analyse sounds from birds, trees, bees, and soil.
+I am passionate about permaculture and sustainability, a proud keeper of bees and chickens, and grower of fruits, vegetables and mushrooms. I blend my expertise in data analysis and engineering with my love of nature to monitor and maintain the ecosystems I create. My latest project is designing networked sensors for wide-area sampling of the local environment, primarily using ecoacoustics to analyse sounds from birds, trees, bees, and soil. -->
